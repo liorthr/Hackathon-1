@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: burlywood;
@@ -9,6 +9,43 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+  }
+  
+  .logo img {
+    width: 50px; 
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px; 
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+    font-size: 16px;
+  } */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    margin-right: 10%;
   }
   
   .logo img {
@@ -24,7 +61,7 @@ body {
   
   .nav-links li {
     display: inline;
-    margin-left: 20px; /* Adjust the spacing between links */
+    margin-left: 50px; /* Adjust the spacing between links */
   }
   
   .nav-links li a {
@@ -33,6 +70,7 @@ body {
     font-weight: bold;
     font-size: 16px;
   }
+
 /*Quiz*/
 .app{
     background-color: brown;
@@ -71,9 +109,13 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
     background: #222;
     color: wheat;
+}
+.btn:disabled{
+    cursor: no-drop;
+    
 }
 #next-btn{
     background:black;

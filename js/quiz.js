@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Which is the symbol of judaism ?",
+        question: "What is the symbol of judaism ?",
         answers: [
             { text: "Kippa", correct: true},
             { text: "Arrow", correct: false},
@@ -9,12 +9,12 @@ const questions = [
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "What is the book od judaism ?",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "Coran", correct: true},
+            { text: "Thora", correct: false},
+            { text: "Bible", correct: false},
+            { text: "Science", correct: false},
         ]
     },
     {
@@ -116,7 +116,7 @@ function showQuestion(){
         const button = document.createElement("button")
         button.innerHTML = answer.text
         button.classList.add("btn")
-        answerButton.appendChild(button)  
+        answerButtons.appendChild(button)  
         if(answer.correct){
             button.dataset.correct = answer.correct
         }
@@ -132,11 +132,12 @@ function resetState(){
     }
 }
 
-function selectAnswer(){
-    const selectedBtn = e.target
+function selectAnswer(e){
+    const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true"
     if(isCorrect){
         selectedBtn.classList.add("correct")
+        score++
     }else{
         selectedBtn.classList.add("incorrect")
     }
@@ -149,5 +150,28 @@ function selectAnswer(){
     nextButton.style.display = "block"
 }
 
+function showScore(){
+    resetState()
+    questionElement.innerHTML = "Your score " + score + "/" + questions.length
+    nextButton.innerHTML = "Play Again"
+    nextButton.style.display = "block"
+}
+
+function handleNextButton(){
+    currentQuestionIndex++
+    if(currentQuestionIndex < questions.length){
+        showQuestion()
+    }else{
+        showScore()
+    }
+}
+
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex< questions.length){
+        handleNextButton()
+    }else{
+        startQuiz()
+    }
+})
 
 startQuiz()

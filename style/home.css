@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: burlywood;
   }
   
   .navbar {
@@ -8,11 +9,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: transparent
+    background-color: transparent;
+    margin-right: 10%;
   }
   
   .logo img {
-    width: 50px; /* Adjust the size of the logo as needed */
+    width: 50px; 
     height: auto;
   }
   
@@ -24,18 +26,17 @@ body {
   
   .nav-links li {
     display: inline;
-    margin-left: 50px; /* Adjust the spacing between links */
+    margin-left: 50px; 
   }
   
   .nav-links li a {
     text-decoration: none;
-    color: black; /* Change the color of the links as needed */
+    color: black; 
     font-weight: bold;
     font-size: 16px;
   }
   
   /* home 1*/
-  /* Your existing CSS styles for navbar */
 
 .home-section {
     height: 100vh;
@@ -44,6 +45,7 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
+    border-top: 3px solid black;
   }
   
   .home-content {
@@ -53,7 +55,7 @@ body {
   }
   
   .text-content h1 {
-    color: white; /* Change text color as needed */
+    color: white; 
     font-size: 40px;
     line-height: 1.5;
     max-width: 400px;
@@ -69,19 +71,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2; /* Change background color as needed */
+    background-color: #f2f2f2; 
   }
   
   .history-content h1 {
     font-size: 36px;
     text-align: center;
-    color: #333; /* Change text color as needed */
+    color: #333; 
   }
  
   
   .history-content {
     flex: 1;
-    height: auto; /* Adjust the height as needed */
+    height: auto; 
     background-color: brown;
     margin-right: 10px; /* Adjust spacing between columns */
     box-sizing: border-box;
