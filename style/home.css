@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 50px; /* Adjust the spacing between links */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black; /* Change the color of the links as needed */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* home 1*/
+  /* Your existing CSS styles for navbar */
+
+.home-section {
+    height: 100vh;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-content {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .text-content h1 {
+    color: white; /* Change text color as needed */
+    font-size: 40px;
+    line-height: 1.5;
+    max-width: 400px;
+    font-family: 'Crimson Text', serif;
+  }
+  .text-content p{
+    color: white;
+    margin-left: 30%
+  }
+  /* home 2*/
+  /* Your existing CSS styles for navbar */
+
+/* Additional styles for the History section */
+.history-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Change background color as needed */
+  }
+  
+  .history-content h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333; /* Change text color as needed */
+  }
+  

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px; /* Adjust the spacing between links */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black; /* Change the color of the links as needed */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
