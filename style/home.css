@@ -64,9 +64,6 @@ body {
     margin-left: 30%
   }
   /* home 2*/
-  /* Your existing CSS styles for navbar */
-
-/* Additional styles for the History section */
 .history-section {
     height: 100vh;
     display: flex;
@@ -80,4 +77,60 @@ body {
     text-align: center;
     color: #333; /* Change text color as needed */
   }
+ 
   
+  .history-content {
+    flex: 1;
+    height: auto; /* Adjust the height as needed */
+    background-color: brown;
+    margin-right: 10px; /* Adjust spacing between columns */
+    box-sizing: border-box;
+  }
+  /* Flexbox styling for three columns */
+
+ .history-column {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment as needed */
+    margin: 10px;
+  }
+  
+  .history-column {
+    flex: 1;
+    height: 300px; /* Adjust the height as needed */
+    background-color: #1111; /* Change background color as needed */
+    margin-right: 10px; /* Adjust spacing between columns */
+    box-sizing: border-box;
+  }
+ 
+  #column1{
+    background-color: aqua;
+  }
+  #column2 {
+    background-color: blue; /* Change background color as needed */
+  }
+  
+  #column3 {
+    background-color: #d0d0d0; /* Change background color as needed */
+  }
+
+/* Common styles for all columns */
+
+  
+
+  /* Home 3 */
+  .rules-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Change background color as needed */
+  }
+  
+  .rules-content h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333; /* Change text color as needed */
+  }
+  /* parallax*/
+  /* Your existing CSS styles for parallax sections, arrows, etc. */
+
