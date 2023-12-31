@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 50px; /* Adjust the spacing between links */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black; /* Change the color of the links as needed */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* home 1*/
+  /* Your existing CSS styles for navbar */
+
+.home-section {
+    height: 100vh;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-content {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .text-content h1 {
+    color: white; /* Change text color as needed */
+    font-size: 40px;
+    line-height: 1.5;
+    max-width: 400px;
+    font-family: 'Crimson Text', serif;
+  }
+  .text-content p{
+    color: white;
+    margin-left: 30%
+  }
+  /* home 2*/
+.history-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Change background color as needed */
+  }
+  
+  .history-content h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333; /* Change text color as needed */
+  }
+ 
+  
+  .history-content {
+    flex: 1;
+    height: auto; /* Adjust the height as needed */
+    background-color: brown;
+    margin-right: 10px; /* Adjust spacing between columns */
+    box-sizing: border-box;
+  }
+  /* Flexbox styling for three columns */
+
+ .history-column {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment as needed */
+    margin: 10px;
+  }
+  
+  .history-column {
+    flex: 1;
+    height: 300px; /* Adjust the height as needed */
+    background-color: #1111; /* Change background color as needed */
+    margin-right: 10px; /* Adjust spacing between columns */
+    box-sizing: border-box;
+  }
+ 
+  #column1{
+    background-color: aqua;
+  }
+  #column2 {
+    background-color: blue; /* Change background color as needed */
+  }
+  
+  #column3 {
+    background-color: #d0d0d0; /* Change background color as needed */
+  }
+
+/* Common styles for all columns */
+
+  
+
+  /* Home 3 */
+  .rules-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Change background color as needed */
+  }
+  
+  .rules-content h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333; /* Change text color as needed */
+  }
+  /* parallax*/
+  /* Your existing CSS styles for parallax sections, arrows, etc. */
+
