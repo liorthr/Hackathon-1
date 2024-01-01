@@ -37,6 +37,9 @@ body {
     font-family: 'Crimson Text', serif;
     font-size: larger;
   }
+  .nav-links li a:hover{
+    color: brown;
+  }
   
   /* home 1*/
 
@@ -131,6 +134,27 @@ body {
     margin-right: 1%;
     box-shadow: 10px 5px 5px;
   }
+  #column1 h2, #column2 h2 ,#column3 h2 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+  }
+  #column1 img , #column2 img, #column3 img {
+    border-radius: 12px;
+  }
+  /* CSS to hide animated elements by default */
+.w3-animate-top,
+.w3-animate-bottom {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transform: translateY(20px); /* Adjust the distance elements move */
+}
+
+/* Activate the animation when the 'active' class is added */
+.w3-animate-top.active,
+.w3-animate-bottom.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
   /* Home 3 */
@@ -166,12 +190,16 @@ body {
  
   #rules-column1{
     background-color:  bisque;
-    text-align: center;
     border-radius: 16px;
     padding: auto;
     margin-left: 3px;
     margin-right: 3px;
   }
+  #rules-column1 h2,#rules-column2 h2,#rules-column3 h2,
+  #rules-column4 h2,#rules-column5 h2{
+    font-family: 'Crimson Text', serif;
+  }
+ 
   #rules-column1:hover{
     background-color: wheat;
     text-align: center;
@@ -179,7 +207,8 @@ body {
     padding: auto;
     margin-left: 3px;
     margin-right: 3px;
-    transform: scale(1.03);
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
   }
   #rules-column2 {
     background-color: bisque;
@@ -187,6 +216,16 @@ body {
     border-radius: 16px;
     margin-left: 3px;
     margin-right: 3px;
+  }
+  #rules-column2:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
   }
   
   #rules-column3 {
@@ -197,6 +236,16 @@ body {
     margin-left: 3px;
     margin-right: 3px;
   }
+  #rules-column3:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
+  }
   #rules-column4 {
     background-color: bisque;
     text-align: center;
@@ -204,6 +253,16 @@ body {
     padding: auto;
     margin-left: 3px;
     margin-right: 3px;
+  }
+  #rules-column4:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
   }
   #rules-column5 {
     background-color:  bisque;
@@ -213,7 +272,27 @@ body {
     margin-left: 3px;
     margin-right: 3px;
   }
+  #rules-column5:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
+  }
 
+/*test*/
+.w3-animate-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 2s ease;
+}
+.w3-animate-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 
@@ -224,7 +303,8 @@ body {
   /* Your existing CSS styles for parallax sections, arrows, etc. */
 
 footer{
-  background-color: antiquewhite;
+  background-color: burlywood;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
