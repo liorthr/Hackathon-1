@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: burlywood;
   }
   
   .navbar {
@@ -8,11 +9,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: transparent
+    background-color: transparent;
+    margin-right: 10%;
   }
   
   .logo img {
-    width: 50px; /* Adjust the size of the logo as needed */
+    width: 50px; 
     height: auto;
   }
   
@@ -24,18 +26,22 @@ body {
   
   .nav-links li {
     display: inline;
-    margin-left: 50px; /* Adjust the spacing between links */
+    margin-left: 50px; 
   }
   
   .nav-links li a {
     text-decoration: none;
-    color: black; /* Change the color of the links as needed */
+    color: white;
     font-weight: bold;
     font-size: 16px;
+    font-family: 'Crimson Text', serif;
+    font-size: larger;
+  }
+  .nav-links li a:hover{
+    color: brown;
   }
   
   /* home 1*/
-  /* Your existing CSS styles for navbar */
 
 .home-section {
     height: 100vh;
@@ -53,7 +59,7 @@ body {
   }
   
   .text-content h1 {
-    color: white; /* Change text color as needed */
+    color: white; 
     font-size: 40px;
     line-height: 1.5;
     max-width: 400px;
@@ -63,59 +69,93 @@ body {
     color: white;
     margin-left: 30%
   }
+
+
+
   /* home 2*/
 .history-section {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2; /* Change background color as needed */
+    background-color: rgb(80, 33, 33);
   }
   
   .history-content h1 {
     font-size: 36px;
     text-align: center;
-    color: #333; /* Change text color as needed */
+    color: white; 
+    font-family: 'Crimson Text', serif;
+    font-size: 60px;
   }
  
   
   .history-content {
     flex: 1;
-    height: auto; /* Adjust the height as needed */
-    background-color: brown;
-    margin-right: 10px; /* Adjust spacing between columns */
+    height: auto; 
+    background-color: rgb(80, 33, 33);
+    margin-right: 10px; 
     box-sizing: border-box;
   }
   /* Flexbox styling for three columns */
 
  .history-column {
     display: flex;
-    justify-content: space-between; /* Adjust alignment as needed */
+    justify-content: space-between; 
     margin: 10px;
   }
   
   .history-column {
     flex: 1;
-    height: 300px; /* Adjust the height as needed */
-    background-color: #1111; /* Change background color as needed */
-    margin-right: 10px; /* Adjust spacing between columns */
+    height: 400px; 
+    margin-right: 10px; 
     box-sizing: border-box;
   }
  
   #column1{
-    background-color: aqua;
+    background-color: burlywood;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 10px 5px 5px;
   }
   #column2 {
-    background-color: blue; /* Change background color as needed */
+    background-color: burlywood;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 10px 5px 5px;
   }
   
   #column3 {
-    background-color: #d0d0d0; /* Change background color as needed */
+    background-color: burlywood;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 10px 5px 5px;
   }
+  #column1 h2, #column2 h2 ,#column3 h2 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+  }
+  #column1 img , #column2 img, #column3 img {
+    border-radius: 12px;
+  }
+  /* CSS to hide animated elements by default */
+.w3-animate-top,
+.w3-animate-bottom {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  transform: translateY(20px); /* Adjust the distance elements move */
+}
 
-/* Common styles for all columns */
+/* Activate the animation when the 'active' class is added */
+.w3-animate-top.active,
+.w3-animate-bottom.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  
 
   /* Home 3 */
   .rules-section {
@@ -123,14 +163,148 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2; /* Change background color as needed */
+    background-color:burlywood;
+    background-image: url('../images/home-rules.png');
   }
   
   .rules-content h1 {
     font-size: 36px;
     text-align: center;
-    color: #333; /* Change text color as needed */
+    color: white; 
+    font-family: 'Crimson Text', serif;
+    font-size: 60px;
   }
+
+  .rules-column {
+    display: flex;
+    justify-content: space-between; 
+    margin: 10px;
+  }
+  
+  .rules-column {
+    flex: 1;
+    height: 400px; 
+    margin-right: 10px; 
+    box-sizing: border-box;
+  }
+ 
+  #rules-column1{
+    background-color:  bisque;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  #rules-column1 h2,#rules-column2 h2,#rules-column3 h2,
+  #rules-column4 h2,#rules-column5 h2{
+    font-family: 'Crimson Text', serif;
+  }
+ 
+  #rules-column1:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
+  }
+  #rules-column2 {
+    background-color: bisque;
+    text-align: center;
+    border-radius: 16px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  #rules-column2:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
+  }
+  
+  #rules-column3 {
+    background-color:  bisque;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  #rules-column3:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
+  }
+  #rules-column4 {
+    background-color: bisque;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  #rules-column4:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
+  }
+  #rules-column5 {
+    background-color:  bisque;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  #rules-column5:hover{
+    background-color: wheat;
+    text-align: center;
+    border-radius: 16px;
+    padding: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: scale(1.02);
+    box-shadow: 10px 5px 5px;
+  }
+
+/*test*/
+.w3-animate-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 2s ease;
+}
+.w3-animate-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+
+
   /* parallax*/
   /* Your existing CSS styles for parallax sections, arrows, etc. */
 
+footer{
+  background-color: burlywood;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}

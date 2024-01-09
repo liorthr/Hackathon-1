@@ -1,92 +1,92 @@
 const questions = [
     {
-        question: "Which is the symbol of judaism ?",
+        question: "What is the Jew’s dress?",
         answers: [
             { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
+            { text: "Tunic", correct: false},
             { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "Sail", correct: false},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "What is Shabbat in Judaism, and when is it observed? ?",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "A day of fasting observed on Mondays", correct: false},
+            { text: "The weekly day of rest observed from Friday evening to Saturday evening ", correct: true},
+            { text: "A special holiday celebrated for a week in spring", correct: false},
+            { text: "A monthly gathering for communal prayers", correct: false},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "How are kosher foods defined in Jewish dietary laws?",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "No wine", correct: false},
+            { text: "No meat", correct: false},
+            { text: "Only vegan", correct: false},
+            { text: "All food adhere to Torah", correct: true},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "What does the concept of Tikkun Olam emphasize in Judaism?",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "The importance of personal wealth", correct: false},
+            { text: "Repairing the environment only", correct: false},
+            { text: "Help others like yourself", correct: true},
+            { text: "Focusing solely on spiritual growth", correct: false},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "Can you name three examples of commandments (Mitzvot) in Judaism?",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "Celebrating birthdays, reading newspapers, and gardening            ", correct: false},
+            { text: "Keeping kosher, giving to charity, and observing Shabbat", correct: true},
+            { text: "Going to the gym, learning foreign languages, and shopping", correct: false},
+            { text: "Watching movies, playing sports, and traveling", correct: false},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "What is the book of Jewish",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "Torah", correct: true},
+            { text: "Coran", correct: false},
+            { text: "Bible", correct: false},
+            { text: "W3 Dictiionnary", correct: false},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "How do Jewish families typically observe Shabbat?",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "By working continuously for 24 hours", correct: false},
+            { text: "By abstaining from using technology", correct: false},
+            { text: "By coming together for special meals and prayers ", correct: true},
+            { text: "By going on a vacation", correct: false},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "What is the first law of the Torah",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "Eat only at breakfast", correct: false},
+            { text: "Learn to code at Devlopper Institute", correct: false},
+            { text: "There is only one God", correct: true},
+            { text: "Not to kill", correct: false},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "How many Jews died in World War II?",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "6 000 000", correct: true},
+            { text: "2 000 000", correct: false},
+            { text: "20 000", correct: false},
+            { text: "1000", correct: false},
         ]
     },
     {
-        question: "Which is the symbol of judaism ?",
+        question: "Since when does Israel belong to the Jews historically? (Approximately)",
         answers: [
-            { text: "Kippa", correct: true},
-            { text: "Arrow", correct: false},
-            { text: "Hijab", correct: false},
-            { text: "Bud", correct: false},
+            { text: "80 years", correct: false},
+            { text: "3000 years", correct: true},
+            { text: "500 years", correct: false},
+            { text: "1 000 000 years ", correct: false},
         ]
     },
 
@@ -116,7 +116,7 @@ function showQuestion(){
         const button = document.createElement("button")
         button.innerHTML = answer.text
         button.classList.add("btn")
-        answerButton.appendChild(button)  
+        answerButtons.appendChild(button)  
         if(answer.correct){
             button.dataset.correct = answer.correct
         }
@@ -132,11 +132,12 @@ function resetState(){
     }
 }
 
-function selectAnswer(){
-    const selectedBtn = e.target
+function selectAnswer(e){
+    const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true"
     if(isCorrect){
         selectedBtn.classList.add("correct")
+        score++
     }else{
         selectedBtn.classList.add("incorrect")
     }
@@ -149,5 +150,28 @@ function selectAnswer(){
     nextButton.style.display = "block"
 }
 
+function showScore(){
+    resetState()
+    questionElement.innerHTML = "Your score " + score + "/" + questions.length
+    nextButton.innerHTML = "Play Again"
+    nextButton.style.display = "block"
+}
+
+function handleNextButton(){
+    currentQuestionIndex++
+    if(currentQuestionIndex < questions.length){
+        showQuestion()
+    }else{
+        showScore()
+    }
+}
+
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex< questions.length){
+        handleNextButton()
+    }else{
+        startQuiz()
+    }
+})
 
 startQuiz()
